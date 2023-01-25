@@ -89,7 +89,7 @@ public class AjiDTO {
 	}
 
 	public void setID(String iD) {
-		ID = iD;
+		this.ID = iD;
 	}
 
 	public String getPW() {
@@ -97,7 +97,7 @@ public class AjiDTO {
 	}
 
 	public void setPW(String pW) {
-		PW = pW;
+		this.PW = pW;
 	}
 
 }

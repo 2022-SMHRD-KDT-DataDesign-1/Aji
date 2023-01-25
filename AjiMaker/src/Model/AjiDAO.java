@@ -17,13 +17,13 @@ public class AjiDAO {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			
-			String url = "jdbc:oracle:thin:@localhost:1525:xe";
+			String url = "jdbc:oracle:thin:@gjaischool-b.ddns.net:1525:xe";
 			String user = "campus_d_0120_2";
 			String password = "smhrd2";
 			
 			conn = DriverManager.getConnection(url, user, password);
 		} catch (ClassNotFoundException | SQLException e) {
-			System.out.println("회원가입 : 데이터베이스 연결 실패");
+			System.out.println("데이터베이스 연결 실패");
 			e.printStackTrace();
 		}
 
@@ -51,9 +51,28 @@ public class AjiDAO {
 		}
 	}
 	
-	public void join() {
+	public int ajiJoin(AjiDTO dto) {
+		
+		int row = 0;
 		
 		getCon();
+		try {
+		String sql = "insert into join values(?,?)";
+		
+		psmt = conn.prepareStatement(sql);
+		
+		psmt.setString(1, dto.getID());
+		psmt.setString(2, dto.getPW());
+
+		row = psmt.executeUpdate(); 
+
+	} catch (SQLException e) {
+		System.out.println("회원가입 실패");
+		e.printStackTrace();
+	} finally {
+		getClose();
+	}
+	return row;
 		
 	}
 	
