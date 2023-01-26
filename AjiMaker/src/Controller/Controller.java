@@ -15,12 +15,14 @@ public class Controller {
 		ArrayList<AjiDTO> list = dao.status(dto); // list 받아옴
 
 		for (int i = 0; i < list.size(); i++) {
-			System.out.print("체력 " + list.get(i).getHp()+"\t\t\t");
-			System.out.print("포만감 " + list.get(i).getFill()+"\t\t\t");
-			System.out.println("친밀도 " + list.get(i).getRel());
-			System.out.print("스트레스 " + list.get(i).getStress()+"\t\t");
-			System.out.print("사냥실력 " + list.get(i).getHunt()+"\t\t\t");
-			System.out.println("독립심 " + list.get(i).getInde());
+			System.out.println(" ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ");
+			System.out.print("│체력 " + list.get(i).getHp()+"\t\t\t│");
+			System.out.print("포만감 " + list.get(i).getFill()+"\t\t\t│");
+			System.out.println("친밀도 " + list.get(i).getRel()+"\t│");
+			System.out.print("│스트레스 " + list.get(i).getStress()+"\t\t│");
+			System.out.print("사냥실력 " + list.get(i).getHunt()+"\t\t\t│");
+			System.out.println("독립심 " + list.get(i).getInde()+"\t│");
+			System.out.println(" ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ");
 		}
 	}
 	
@@ -43,9 +45,10 @@ public class Controller {
 		boolean res = dao.ajiLogin(dto); // res ---> boolean
 		
 		if(res) {
-			System.out.println("환영합니다.");
+			//System.out.println("환영합니다.");
 		}else {			
 			System.out.println("로그인 실패");
+			System.out.println("아이디와 비밀번호를 확인해주세요");
 		}
 		
 	}

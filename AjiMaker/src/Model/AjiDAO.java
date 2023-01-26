@@ -186,7 +186,7 @@ public class AjiDAO {
 			row = psmt.executeUpdate();
 
 			if (row > 0) {
-				System.out.println("데이터 업데이트 성공");
+				System.out.println("\r아지 키우기 성공 !! \r");
 			} else {
 				System.out.println("데이터 업데이트 실패");
 			}
