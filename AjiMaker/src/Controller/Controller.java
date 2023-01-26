@@ -88,16 +88,11 @@ public class Controller {
 	}
 	
 	// 로그인
-	public void ajiLogin(AjiDTO dto) {
+	public boolean ajiLogin(AjiDTO dto) {
 		
 		boolean res = dao.ajiLogin(dto); // res ---> boolean
 		
-		if(res) {
-			//System.out.println("환영합니다.");
-		}else {			
-			System.out.println("로그인 실패");
-			System.out.println("아이디와 비밀번호를 확인해주세요");
-		}
+		return res;
 		
 	}
 	

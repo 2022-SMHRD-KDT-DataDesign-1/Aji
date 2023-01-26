@@ -57,18 +57,21 @@ public class Main {
 
 				dto = new AjiDTO(id, pw);
 
-				ct.ajiLogin(dto);
+				if(ct.ajiLogin(dto) == true) {
+					break;
+				}
 				
-				System.out.println("아지의 상태");
-				ct.status(dto);
-				break;
 			} else {
 				System.out.println("다시 입력해주세요");
 			}
-
 		}
+<<<<<<< HEAD
 		
 
+=======
+		System.out.println("아지의 상태");
+		ct.status(dto);
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-DataDesign-1/Aji.git
 		// 출력문 1초 딜레이 메서드 메인 하단에 메서드 있음 확인 요망
 		sleep(1);
 
