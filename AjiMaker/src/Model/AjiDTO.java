@@ -3,7 +3,7 @@ package Model;
 public class AjiDTO {
 	
 	// 유저의 정보
-	private String ID;
+	private String ID="aji";
 	private String PW;
 	
 	// 아지의 스택

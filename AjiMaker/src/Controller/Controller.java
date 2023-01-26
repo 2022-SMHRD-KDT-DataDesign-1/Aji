@@ -8,10 +8,10 @@ import Model.AjiDTO;
 public class Controller {
 	AjiDAO dao = new AjiDAO();
 	
-	public void status() {
+	public void status(AjiDTO dto) {
 
-		dao.status();
-		ArrayList<AjiDTO> list = dao.status(); // list 받아옴
+		dao.status(dto);
+		ArrayList<AjiDTO> list = dao.status(dto); // list 받아옴
 
 		for (int i = 0; i < list.size(); i++) {
 			System.out.print("체력 " + list.get(i).getHp()+"\t\t\t");
