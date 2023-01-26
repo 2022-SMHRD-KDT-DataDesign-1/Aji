@@ -2,12 +2,17 @@ package View;
 
 import java.util.Scanner;
 
+import Controller.Controller;
+import Model.AjiDTO;
+
 public class Main {
 
 	public static void main(String[] args) {
 
 		// 입력도구
 				Scanner sc = new Scanner(System.in);
+				Controller ct = new Controller();
+				AjiDTO dto = new AjiDTO();
 
 				// 챕터 카운트
 				int chapter = 1;
@@ -36,6 +41,7 @@ public class Main {
 					// 챕터 1
 					if (chapter == 1) {
 						System.out.print("메뉴를 입력하세요 >> ");
+						System.out.print("1. 밥먹기 2. 놀기 3. 재우기 4. 목욕하기 5. 사냥하기 >> ");
 						select = sc.nextInt();
 						
 						// 밥먹기 선택
@@ -45,9 +51,11 @@ public class Main {
 							meal = sc.nextInt();
 							cnt++;
 							if (meal == 1) {
-
+								ct.eatMilk1(dto);
+								ct.status(dto);
 							} else if (meal == 2) {
-
+								ct.eatBabysoup1(dto);
+								ct.status(dto);
 							}
 						}  
 						// 놀기 선택
@@ -58,17 +66,23 @@ public class Main {
 							play = sc.nextInt();
 							cnt++;
 							if (play == 1) {
-
+								ct.playRobot1(dto);
+								ct.status(dto);
 							} else if (play == 2) {
-
+								ct.playBell1(dto);
+								ct.status(dto);
 							} else if (play == 3) {
-
+								ct.playDoll1(dto);
+								ct.status(dto);
 							}
 						// 재우기 선택
 							
 						} else if (select == 3) {
 							System.out.println("[재우기]");
 							cnt++;
+							ct.sleep1(dto);
+							ct.status(dto);
+							
 						}
 
 						// 5번 선택 실행횟수 카운트 넘으면 챕터 +1
@@ -85,6 +99,7 @@ public class Main {
 					// 챕터 2
 					if (chapter == 2) {
 						System.out.print("메뉴를 입력하세요 >> ");
+						System.out.print("1. 밥먹기 2. 놀기 3. 재우기 4. 목욕하기 5. 사냥하기 >> ");
 						select = sc.nextInt();
 						
 						// 밥먹기 선택
@@ -95,11 +110,14 @@ public class Main {
 							meal = sc.nextInt();
 							cnt++;
 							if (meal == 1) {
-
+								ct.eatChur2(dto);
+								ct.status(dto);
 							} else if (meal == 2) {
-
+								ct.eatFeed2(dto);
+								ct.status(dto);
 							} else if (meal == 3) {
-
+								ct.eatCan2(dto);
+								ct.status(dto);
 							}
 							
 							// 놀기 선택
@@ -110,11 +128,14 @@ public class Main {
 							play = sc.nextInt();
 							cnt++;
 							if (play == 1) {
-
+								ct.playFish2(dto);
+								ct.status(dto);
 							} else if (play == 2) {
-
+								ct.playTower2(dto);
+								ct.status(dto);
 							} else if (play == 3) {
-
+								ct.playBox2(dto);
+								ct.status(dto);
 							}
 							
 							// 재우기 선택
@@ -125,9 +146,11 @@ public class Main {
 							sleep = sc.nextInt();
 							cnt++;
 							if (sleep == 1) {
-
+								ct.sleepBed2(dto);
+								ct.status(dto);
 							} else if (sleep == 2) {
-
+								ct.sleepOndol2(dto);
+								ct.status(dto);
 							}
 							
 							// 목욕하기 선택
@@ -135,7 +158,8 @@ public class Main {
 						} else if (select == 4) {
 							System.out.println("[목욕하기]");
 							cnt++;
-							
+							ct.bath2(dto);
+							ct.status(dto);
 							// 사냥하기 선택
 							
 						} else if (select == 5) {
@@ -144,9 +168,11 @@ public class Main {
 							hunt = sc.nextInt();
 							cnt++;
 							if (hunt == 1) {
-
+								ct.huntBug2(dto);
+								ct.status(dto);
 							} else if (hunt == 2) {
-
+								ct.huntBF2(dto);
+								ct.status(dto);
 							}
 						}
 						
@@ -165,6 +191,7 @@ public class Main {
 					
 					if (chapter == 3) {
 						System.out.print("메뉴를 입력하세요 >> ");
+						System.out.print("1. 밥먹기 2. 놀기 3. 재우기 4. 목욕하기 5. 사냥하기 >> ");
 						select = sc.nextInt();
 						
 						// 밥먹기 선택 
@@ -175,13 +202,17 @@ public class Main {
 							meal = sc.nextInt();
 							cnt++;
 							if (meal == 1) {
-
+								ct.eatChicken3(dto);
+								ct.status(dto);
 							} else if (meal == 2) {
-
+								ct.eatChicken3(dto);
+								ct.status(dto);
 							} else if (meal == 3) {
-
+								ct.eatFeed3(dto);
+								ct.status(dto);
 							} else if (meal == 4) {
-
+								ct.eatCatnip3(dto);
+								ct.status(dto);
 							}
 
 							// 놀기 선택
@@ -192,13 +223,17 @@ public class Main {
 							play = sc.nextInt();
 							cnt++;
 							if (play == 1) {
-
+								ct.playFish3(dto);
+								ct.status(dto);
 							} else if (play == 2) {
-
+								ct.playTower3(dto);
+								ct.status(dto);
 							} else if (play == 3) {
-
+								ct.playBox3(dto);
+								ct.status(dto);
 							} else if (play == 4) {
-
+								ct.playScratchr3(dto);
+								ct.status(dto);
 							}
 							
 							// 놀기 선택
@@ -209,17 +244,20 @@ public class Main {
 							sleep = sc.nextInt();
 							cnt++;
 							if (sleep == 1) {
-
+								ct.sleepBed3(dto);
+								ct.status(dto);
 							} else if (sleep == 2) {
-
+								ct.sleepOndol3(dto);
+								ct.status(dto);
 							}
 							
 							// 목욕하기 선택
 							
 						} else if (select == 4) {
 							System.out.println("[목욕하기]");
-
 							cnt++;
+							ct.Bath3(dto);
+							ct.status(dto);
 							
 							// 사냥하기 선택
 							
@@ -229,13 +267,17 @@ public class Main {
 							hunt = sc.nextInt();
 							cnt++;
 							if (hunt == 1) {
-
+								ct.huntBug3(dto);
+								ct.status(dto);
 							} else if (hunt == 2) {
-
+								ct.huntBF3(dto);
+								ct.status(dto);
 							} else if (hunt == 3) {
-
+								ct.huntMouse3(dto);
+								ct.status(dto);
 							} else if (hunt == 4) {
-
+								ct.huntBird3(dto);
+								ct.status(dto);
 							}
 
 						}
@@ -253,6 +295,7 @@ public class Main {
 					
 					if (chapter == 4) {
 						System.out.print("메뉴를 입력하세요 >> ");
+						System.out.print("1. 밥먹기 2. 놀기 3. 재우기 4. 목욕하기 5. 사냥하기 >> ");
 						select = sc.nextInt();
 						
 						// 밥먹기 선택
@@ -263,15 +306,20 @@ public class Main {
 							meal = sc.nextInt();
 							cnt++;
 							if (meal == 1) {
-
+								ct.eatChicken4(dto);
+								ct.status(dto);
 							} else if (meal == 2) {
-
+								ct.eatChur4(dto);
+								ct.status(dto);
 							} else if (meal == 3) {
-
+								ct.eatFeed4(dto);
+								ct.status(dto);
 							} else if (meal == 4) {
-
+								ct.eatSalmon4(dto);
+								ct.status(dto);
 							} else if (meal == 5) {
-
+								ct.eatCatnip4(dto);
+								ct.status(dto);
 							}
 							
 							// 놀기 선택
@@ -282,15 +330,20 @@ public class Main {
 							play = sc.nextInt();
 							cnt++;
 							if (play == 1) {
-
+								ct.playFish4(dto);
+								ct.status(dto);
 							} else if (play == 2) {
-
+								ct.playTower4(dto);
+								ct.status(dto);
 							} else if (play == 3) {
-
+								ct.playBox4(dto);
+								ct.status(dto);
 							} else if (play == 4) {
-
+								ct.playBall4(dto);
+								ct.status(dto);
 							} else if (play == 5) {
-
+								ct.playTree4(dto);
+								ct.status(dto);
 							}
 							
 							// 재우기 선택
@@ -301,9 +354,11 @@ public class Main {
 							sleep = sc.nextInt();
 							cnt++;
 							if (sleep == 1) {
-
+								ct.sleepBed4(dto);
+								ct.status(dto);
 							} else if (sleep == 2) {
-
+								ct.sleepOndol4(dto);
+								ct.status(dto);
 							}
 
 							// 목욕하기 선택
@@ -311,7 +366,8 @@ public class Main {
 						} else if (select == 4) {
 							System.out.println("[목욕하기]");
 							cnt++;
-							
+							ct.Bath4(dto);
+							ct.status(dto);
 							// 사냥하기 선택
 							
 						} else if (select == 5) {
@@ -320,16 +376,21 @@ public class Main {
 							hunt = sc.nextInt();
 							cnt++;
 							if (hunt == 1) {
-
+								ct.huntBug4(dto);
+								ct.status(dto);
 							} else if (hunt == 2) {
-
+								ct.huntBF4(dto);
+								ct.status(dto);
 							} else if (hunt == 3) {
-
+								ct.huntMouse4(dto);
+								ct.status(dto);
 							} else if (hunt == 4) {
-
+								ct.huntBird4(dto);
+								ct.status(dto);
 							} else if (hunt == 5) {
-
-							}
+								ct.huntDog4(dto);
+								ct.status(dto);
+							}	
 
 						}
 					}
@@ -345,6 +406,7 @@ public class Main {
 					
 					if (chapter == 5) {
 						System.out.print("메뉴를 입력하세요 >> ");
+						System.out.print("1. 밥먹기 2. 놀기 3. 재우기 4. 목욕하기 5. 사냥하기 >> ");
 						select = sc.nextInt();
 						
 						// 밥먹기 선택
@@ -355,15 +417,20 @@ public class Main {
 							meal = sc.nextInt();
 							cnt++;
 							if (meal == 1) {
-
+								ct.eatChicker5(dto);
+								ct.status(dto);
 							} else if (meal == 2) {
-
+								ct.eatChur5(dto);
+								ct.status(dto);
 							} else if (meal == 3) {
-
+								ct.eatFeed5(dto);
+								ct.status(dto);
 							} else if (meal == 4) {
-
+								ct.eatSalmon5(dto);
+								ct.status(dto);
 							} else if (meal == 5) {
-
+								ct.eatCatnip5(dto);
+								ct.status(dto);
 							}
 							
 							// 놀기 선택
@@ -374,15 +441,20 @@ public class Main {
 							play = sc.nextInt();
 							cnt++;
 							if (play == 1) {
-
+								ct.playFish5(dto);
+								ct.status(dto);
 							} else if (play == 2) {
-
+								ct.playTower5(dto);
+								ct.status(dto);
 							} else if (play == 3) {
-
+								ct.playBox5(dto);
+								ct.status(dto);
 							} else if (play == 4) {
-
+								ct.playBall5(dto);
+								ct.status(dto);
 							} else if (play == 5) {
-
+								ct.playTree5(dto);
+								ct.status(dto);
 							}
 							
 							// 재우기 선택
@@ -393,9 +465,11 @@ public class Main {
 							sleep = sc.nextInt();
 							cnt++;
 							if (sleep == 1) {
-
+								ct.sleepBed5(dto);
+								ct.status(dto);
 							} else if (sleep == 2) {
-
+								ct.sleepOndol5(dto);
+								ct.status(dto);
 							}
 
 							// 목욕하기 선택
@@ -403,7 +477,8 @@ public class Main {
 						} else if (select == 4) {
 							System.out.println("[목욕하기]");
 							cnt++;
-							
+							ct.Bath5(dto);
+							ct.status(dto);
 							// 사냥하기 선택
 							
 						} else if (select == 5) {
@@ -412,15 +487,20 @@ public class Main {
 							hunt = sc.nextInt();
 							cnt++;
 							if (hunt == 1) {
-
+								ct.huntBug5(dto);
+								ct.status(dto);
 							} else if (hunt == 2) {
-
+								ct.huntMouse5(dto);
+								ct.status(dto);
 							} else if (hunt == 3) {
-
+								ct.huntBird5(dto);
+								ct.status(dto);
 							} else if (hunt == 4) {
-
+								ct.huntDog5(dto);
+								ct.status(dto);
 							} else if (hunt == 5) {
-
+								ct.huntCat5(dto);
+								ct.status(dto);
 							}
 
 						}

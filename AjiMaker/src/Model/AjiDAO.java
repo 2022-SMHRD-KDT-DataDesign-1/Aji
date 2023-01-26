@@ -688,7 +688,7 @@ public class AjiDAO {
 
 	}
 
-	public void hungBF3(AjiDTO dto) {
+	public void huntBF3(AjiDTO dto) {
 		int row = 0;
 		status(dto);
 		int hp = status(dto).get(0).getHp() - 11;
@@ -705,7 +705,7 @@ public class AjiDAO {
 		psmtUpdate(dto, hp, fill, rel, stress, hunt, inde);
 	}
 
-	public void hungMouse3(AjiDTO dto) {
+	public void huntMouse3(AjiDTO dto) {
 		int row = 0;
 		status(dto);
 		int hp = status(dto).get(0).getHp() - 15;

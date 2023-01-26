@@ -149,11 +149,11 @@ public class Controller {
 	public void huntBug3(AjiDTO dto) {
 		dao.huntBug3(dto);
 	}
-	public void hungBF3(AjiDTO dto) {
-		dao.hungBF3(dto);
+	public void huntBF3(AjiDTO dto) {
+		dao.huntBF3(dto);
 	}
-	public void hungMouse3(AjiDTO dto) {
-		dao.hungMouse3(dto);
+	public void huntMouse3(AjiDTO dto) {
+		dao.huntMouse3(dto);
 	}
 	public void huntBird3(AjiDTO dto) {
 		dao.huntBird3(dto);
