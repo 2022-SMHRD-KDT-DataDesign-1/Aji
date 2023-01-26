@@ -45,12 +45,13 @@ public class Controller {
 		status[4] = list.get(0).getHunt();
 		status[5] = list.get(0).getInde();
 		int max = status[0];
-		String name =null;
+		String name = null;
 		for(int i = 0; i<status.length; i++) {
 			if(max<status[i]) {
 				max=status[i];
+				name = statusNames[i];
 			}
-			name = statusNames[i];
+			
 		}
 		
 		if(name.equals("독립심")) {
