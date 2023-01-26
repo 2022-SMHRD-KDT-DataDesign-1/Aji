@@ -48,13 +48,13 @@ public class Main {
 					//String pw = sc.next();
 					//AjiDTO dto = new AjiDTO(id, pw);
 					
-					ct.ajiJoin(dto);
+//					ct.ajiJoin(dto);
 					
 					//cnt++;
 				} else if (select == 2) {
 					// 로그인
 					
-					ct.ajiLogin(dto);
+//					ct.ajiLogin(dto);
 					
 					ct.ajiSelect(dto);
 					//cnt++;

@@ -34,6 +34,16 @@ public class AjiDTO {
 		this.inde = inde;
 
 	}
+	public AjiDTO(int hp, int fill, int rel, int stress, int hunt, int inde) {
+
+		this.hp = hp;
+		this.fill = fill;
+		this.rel = rel;
+		this.stress = stress;
+		this.hunt = hunt;
+		this.inde = inde;
+
+	}
 
 	public AjiDTO(String iD) {
 		

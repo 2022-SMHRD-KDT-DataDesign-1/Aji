@@ -7,29 +7,29 @@ public class AjiController {
 
 	AjiDAO dao = new AjiDAO();
 	
-	public void ajiJoin(AjiDTO dto) {
-		
-		int row = dao.ajiJoin(dto);
-		
-		if(row > 0) {
-			System.out.println("회원가입 성공");
-		}else {
-			System.out.println("회원가입 실패");
-		}
-		
-	}
+//	public void ajiJoin(AjiDTO dto) {
+//		
+//		int row = dao.ajiJoin(dto);
+//		
+//		if(row > 0) {
+//			System.out.println("회원가입 성공");
+//		}else {
+//			System.out.println("회원가입 실패");
+//		}
+//		
+//	}
 	
-	public void ajiLogin(AjiDTO dto) {
-		
-		boolean res = dao.ajiLogin(dto); // res ---> boolean
-		
-		if(res) {
-			System.out.println("환영합니다.");
-		}else {			
-			System.out.println("로그인 실패");
-		}
-		
-	}
+//	public void ajiLogin(AjiDTO dto) {
+//		
+//		boolean res = dao.ajiLogin(dto); // res ---> boolean
+//		
+//		if(res) {
+//			System.out.println("환영합니다.");
+//		}else {			
+//			System.out.println("로그인 실패");
+//		}
+//		
+//	}
 	
 	public void ajiSelect(AjiDTO dto) {
 		
