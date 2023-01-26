@@ -1,5 +1,6 @@
 package View;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import Controller.Controller;
@@ -15,6 +16,7 @@ public class Main {
 		Controller ct = new Controller();
 		AjiDTO dto = new AjiDTO();
 
+		
 		// 챕터 카운트
 		int chapter = 1;
 
@@ -65,9 +67,19 @@ public class Main {
 			}
 
 		}
+		
+
 		// 출력문 1초 딜레이 메서드 메인 하단에 메서드 있음 확인 요망
 		sleep(1);
 
+		
+
+		ct.ending(dto);
+		
+		
+		
+		
+		
 		
 		System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
 
@@ -820,7 +832,13 @@ public class Main {
 					break;
 				}
 			}
+			
+		
 		}
+		
+		
+
+		
 	}
 
 	// 출력문 원하는 초 딜레이 메서드
