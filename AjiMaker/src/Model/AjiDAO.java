@@ -5,12 +5,14 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Random;
 import java.util.ArrayList;
 
 public class AjiDAO {
 
 	Connection conn = null;
 	PreparedStatement psmt = null;
+	PreparedStatement psmt2 = null;
 	ResultSet rs = null;
 
 	public void getCon() {
@@ -46,29 +48,77 @@ public class AjiDAO {
 			if (rs != null) {
 				rs.close();
 			}
+			if(psmt2 != null) {
+				psmt2.close();
+			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
-	public void join() {
+	// 회원가입
+	public int ajiJoin(AjiDTO dto) {
+
+		Random rd = new Random();
+
+		int row = 0;
 
 		getCon();
 
+		try {
+
+			int hp = rd.nextInt(20) + 1;
+			int fill = rd.nextInt(20) + 1;
+			int rel = rd.nextInt(20) + 1;
+			int stress = rd.nextInt(20) + 1;
+			int hunt = rd.nextInt(20) + 1;
+			int inde = rd.nextInt(20) + 1;
+
+			String sql = "insert into ajiuser values(?,?)";
+			String sql2 = "insert into ajistatus values(?,?,?,?,?,?,?)";
+
+			psmt = conn.prepareStatement(sql);
+			psmt2 = conn.prepareStatement(sql2);
+
+			psmt.setString(1, dto.getID());
+			psmt.setString(2, dto.getPW());
+
+			psmt2.setInt(1, hp);
+			psmt2.setInt(2, fill);
+			psmt2.setInt(3, rel);
+			psmt2.setInt(4, stress);
+			psmt2.setInt(5, hunt);
+			psmt2.setInt(6, inde);
+			psmt2.setString(7, dto.getID());
+
+			row = psmt.executeUpdate();
+			row = psmt2.executeUpdate();
+
+		} catch (SQLException e) {
+			System.out.println("회원가입 실패");
+			e.printStackTrace();
+		} finally {
+			getClose();
+		}
+		return row;
+
 	}
 
-	public ArrayList<AjiDTO> status(AjiDTO dto) {
 
+	// 특정 유저의 아지 스테이터스 불러오기
+	public ArrayList<AjiDTO> status(AjiDTO dto) {
+		
 		ArrayList<AjiDTO> list = new ArrayList<>();
 		getCon();
 
 		try {
+			
 			String sql = "select * from ajistatus where id=?";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getID());
 			rs = psmt.executeQuery();
-
+			
 			while (rs.next()) {
 				int hp = rs.getInt("hp");
 				int fill = rs.getInt("fill");
@@ -87,8 +137,38 @@ public class AjiDAO {
 			getClose();
 		}
 		return list;
+
 	}
 
+	// 로그인
+	public boolean ajiLogin(AjiDTO dto) {
+
+		boolean res = false;
+		getCon();
+
+		try {
+
+			String sql = "select * from ajiuser where id = ? and pw = ?";
+
+			psmt = conn.prepareStatement(sql);
+
+			psmt.setString(1, dto.getID());
+			psmt.setString(2, dto.getPW());
+
+			rs = psmt.executeQuery();
+
+			res = rs.next();
+
+		} catch (SQLException e) {
+			System.out.println("로그인 실패");
+			e.printStackTrace();
+		} finally {
+			getClose();
+		}
+		return res;
+	}
+
+	// 아지 스테이터스 업데이트 메서드
 	private void psmtUpdate(AjiDTO dto, int hp, int fill, int rel, int stress, int hunt, int inde) {
 		int row;
 		try {
@@ -116,6 +196,7 @@ public class AjiDAO {
 		} finally {
 			getClose();
 		}
+
 	}
 
 	// chapter 1
@@ -1290,6 +1371,7 @@ public class AjiDAO {
 		}
 		getCon();
 		psmtUpdate(dto, hp, fill, rel, stress, hunt, inde);
+
 	}
 
 }

@@ -1,45 +1,61 @@
 package Model;
 
 public class AjiDTO {
-	
+
 	// 유저의 정보
 	private String ID="aji";
 	private String PW;
-	
+
 	// 아지의 스택
-	private int hp; 	// 체력
-	private int fill; 	// 포만감
-	private int rel; 	// 친밀도
+	private int hp; // 체력
+	private int fill; // 포만감
+	private int rel; // 친밀도
 	private int stress; // 스트레스
-	private int hunt; 	// 사냥실력
-	private int inde; 	// 독립심
-	
+	private int hunt; // 사냥실력
+	private int inde; // 독립심
+
 	// 유저의 정보를 받는 생성자
 	public AjiDTO(String iD, String pW) {
-		
+
 		this.ID = iD;
 		this.PW = pW;
-		
+
 	}
-	
+
+
 	//Main - Controller - DAO 전송 위한 생성자
-		public AjiDTO() {
+	public AjiDTO() {
 			
-		}
-		
+	}
+
 	// 아지의 스택을 받는 생성자
-	public AjiDTO(int hp, int fill, int rel, int stress, int hunt, int inde) {
-		
+	public AjiDTO(String id, int hp, int fill, int rel, int stress, int hunt, int inde) {
+
+		this.ID = id;
 		this.hp = hp;
 		this.fill = fill;
 		this.rel = rel;
 		this.stress = stress;
 		this.hunt = hunt;
 		this.inde = inde;
-		
+
+	}
+	public AjiDTO(int hp, int fill, int rel, int stress, int hunt, int inde) {
+
+		this.hp = hp;
+		this.fill = fill;
+		this.rel = rel;
+		this.stress = stress;
+		this.hunt = hunt;
+		this.inde = inde;
+
 	}
 
-	
+	public AjiDTO(String iD) {
+		
+		this.ID = iD;
+	}
+
 	// 유저AND아지의 스택 getter//setter
 	public int getHp() {
 		return hp;

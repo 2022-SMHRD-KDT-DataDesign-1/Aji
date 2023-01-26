@@ -7,7 +7,8 @@ import Model.AjiDTO;
 
 public class Controller {
 	AjiDAO dao = new AjiDAO();
-	
+
+	// 특정 유저의 아지 정보를 불러옴
 	public void status(AjiDTO dto) {
 
 		dao.status(dto);
@@ -23,7 +24,31 @@ public class Controller {
 		}
 	}
 	
+	// 회원가입
+	public void ajiJoin(AjiDTO dto) {
+		
+		int row = dao.ajiJoin(dto);
+		
+		if(row > 0) {
+			System.out.println("회원가입 성공");
+		}else {
+			System.out.println("회원가입 실패");
+		}
+		
+	}
 	
+	// 로그인
+	public void ajiLogin(AjiDTO dto) {
+		
+		boolean res = dao.ajiLogin(dto); // res ---> boolean
+		
+		if(res) {
+			System.out.println("환영합니다.");
+		}else {			
+			System.out.println("로그인 실패");
+		}
+		
+	}
 	
 	// chapter 1
 	public void eatMilk1(AjiDTO dto) {
