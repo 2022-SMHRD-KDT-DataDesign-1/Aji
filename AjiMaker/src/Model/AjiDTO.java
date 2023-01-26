@@ -22,6 +22,12 @@ public class AjiDTO {
 
 	}
 
+
+	//Main - Controller - DAO 전송 위한 생성자
+	public AjiDTO() {
+			
+	}
+
 	// 아지의 스택을 받는 생성자
 	public AjiDTO(String id, int hp, int fill, int rel, int stress, int hunt, int inde) {
 
