@@ -52,6 +52,11 @@ public class AjiDAO {
 		}
 	}
 
+	public void join() {
+
+		getCon();
+
+	}
 
 	public ArrayList<AjiDTO> status() {
 
