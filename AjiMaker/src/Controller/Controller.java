@@ -55,21 +55,31 @@ public class Controller {
 		}
 		
 		if(name.equals("독립심")) {
+			sleep();
 			System.out.println("매일 아침 7시 아지는 일어나서 밥을 챙겨먹고,");
+			sleep();
 			System.out.println("혼자서 장난감을 가지고 놀고 ,");
+			sleep();
 			System.out.println("혼자서 열심히 공부하더니 취업에 성공했다.");
+			sleep();
 			System.out.println("그리고 예쁜 공주 고양이와 결혼에 성공해서 행복하게 살았답니다~ ");
 		}else if(name.equals("체력")) {
+			sleep();
 			System.out.println("☆ 아지 세계 최장수 고양이(100세) 로 기네스북에 등극 ");
+			sleep();
 			System.out.println("- 전설에 따르면 아지라는 고양이는 거북이보다 더 오래살았다고 한다...");
 		}else if(name.equals("포만감")) {
+			sleep();
 			System.out.println("너무 많이 먹어버린 아지는 뚱냥이가 되어버렸다");
 		}else if(name.equals("친밀도")) {
+			sleep();
 			System.out.println("집사와 너무 친해진 아지는 개냥이가 되어버렸다 ");
 		}else if(name.equals("스트레스")) {
+			sleep();
 			System.out.println("스트레스를 심하게 받아서 견딜 수 없는 아지는 결국가출해버리고 말았다\r\n"
 					+ " 나는 ㅇrㅈl 를 찾을 수 없었ㄷr...");
 		}else if(name.equals("사냥실력")) {
+			sleep();
 			System.out.println("사냥실력을 잘 갈고닦은 아지는 ' 라이언 킹 ' 이 되었다");
 		}
 			
@@ -326,6 +336,15 @@ public class Controller {
 	}
 	public void huntCat5(AjiDTO dto) {
 		dao.huntCat5(dto);
+	}
+	
+	public void sleep() {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

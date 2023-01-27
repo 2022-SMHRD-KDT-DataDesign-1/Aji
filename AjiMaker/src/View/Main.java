@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import Controller.Controller;
 import Model.AjiDTO;
+import Music.music;
 
 public class Main {
 
@@ -15,7 +16,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		Controller ct = new Controller();
 		AjiDTO dto = new AjiDTO();
-
+		music ms = new music();
 		
 		// 챕터 카운트
 		int chapter = 1;
@@ -35,10 +36,11 @@ public class Main {
 
 		// 회원가입, 로그인 진행 후 게임 진행
 		while (true) {
-
+			
 			System.out.print("1. 회원가입 2. 로그인 >> ");
 			select = sc.nextInt();
-
+			ms.play1();
+			
 			if (select == 1) {
 				System.out.print("ID 입력 : ");
 				String id = sc.next();
@@ -71,16 +73,7 @@ public class Main {
 
 		// 출력문 1초 딜레이 메서드 메인 하단에 메서드 있음 확인 요망
 		sleep(1);
-
-		
-
-		ct.ending(dto);
-		
-		
-		
-		
-		
-		
+	
 		System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
 
 		while (true) {
@@ -92,15 +85,20 @@ public class Main {
 				System.out.println("\r아지와 할 일을 선택하세요 ");
 				System.out.print("1. 밥먹기 2. 놀기 3. 재우기 >> ");
 				select = sc.nextInt();
+				ms.play2();
 
 				// 밥먹기 선택
 				if (select == 1) {
 					System.out.println("[밥먹기]");
 					System.out.print("1. 일반우유 2. 영양만점 짱짱 이유식 >> ");
 					meal = sc.nextInt();
+					
 					cnt++;
 					if (meal == 1) {
 						ct.eatMilk1(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -108,6 +106,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 2) {
 						ct.eatBabysoup1(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -150,6 +151,9 @@ public class Main {
 					System.out.println("[재우기]");
 					cnt++;
 					ct.sleep1(dto);
+					ms.catSleep();
+					sleep(1);
+					ms.stop();
 					//아지 그림
 					System.out.println("이름 : 아지");
 					System.out.println("나이 : 1살");
@@ -174,6 +178,7 @@ public class Main {
 				System.out.println("\r아지와 할 일을 선택하세요 ");
 				System.out.print("1. 밥먹기 2. 놀기 3. 재우기 4. 목욕하기 5. 사냥하기 >> ");
 				select = sc.nextInt();
+				ms.play3();
 
 				// 밥먹기 선택
 
@@ -184,6 +189,9 @@ public class Main {
 					cnt++;
 					if (meal == 1) {
 						ct.eatChur2(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -191,6 +199,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 2) {
 						ct.eatFeed2(dto);
+						ms.feedEat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -198,6 +209,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 3) {
 						ct.eatCan2(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -244,6 +258,9 @@ public class Main {
 					cnt++;
 					if (sleep == 1) {
 						ct.sleepBed2(dto);
+						ms.catSleep();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -251,6 +268,9 @@ public class Main {
 						ct.status(dto);
 					} else if (sleep == 2) {
 						ct.sleepOndol2(dto);
+						ms.catSleep();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -310,6 +330,7 @@ public class Main {
 				System.out.println("\r아지와 할 일을 선택하세요 ");
 				System.out.print("1. 밥먹기 2. 놀기 3. 재우기 4. 목욕하기 5. 사냥하기 >> ");
 				select = sc.nextInt();
+				ms.play2();
 
 				// 밥먹기 선택
 
@@ -320,6 +341,9 @@ public class Main {
 					cnt++;
 					if (meal == 1) {
 						ct.eatChicken3(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -327,6 +351,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 2) {
 						ct.eatChicken3(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -334,6 +361,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 3) {
 						ct.eatFeed3(dto);
+						ms.feedEat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -341,6 +371,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 4) {
 						ct.eatCatnip3(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -394,6 +427,9 @@ public class Main {
 					cnt++;
 					if (sleep == 1) {
 						ct.sleepBed3(dto);
+						ms.catSleep();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -401,6 +437,9 @@ public class Main {
 						ct.status(dto);
 					} else if (sleep == 2) {
 						ct.sleepOndol3(dto);
+						ms.catSleep();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -474,6 +513,7 @@ public class Main {
 				System.out.println("\r아지와 할 일을 선택하세요 ");
 				System.out.print("1. 밥먹기 2. 놀기 3. 재우기 4. 목욕하기 5. 사냥하기 >> ");
 				select = sc.nextInt();
+				ms.play1();
 
 				// 밥먹기 선택
 
@@ -484,6 +524,9 @@ public class Main {
 					cnt++;
 					if (meal == 1) {
 						ct.eatChicken4(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -491,6 +534,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 2) {
 						ct.eatChur4(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -498,6 +544,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 3) {
 						ct.eatFeed4(dto);
+						ms.feedEat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -505,6 +554,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 4) {
 						ct.eatSalmon4(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -512,6 +564,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 5) {
 						ct.eatCatnip4(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -572,6 +627,9 @@ public class Main {
 					cnt++;
 					if (sleep == 1) {
 						ct.sleepBed4(dto);
+						ms.catSleep();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -579,6 +637,9 @@ public class Main {
 						ct.status(dto);
 					} else if (sleep == 2) {
 						ct.sleepOndol4(dto);
+						ms.catSleep();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -634,6 +695,9 @@ public class Main {
 						ct.status(dto);
 					} else if (hunt == 5) {
 						ct.huntDog4(dto);
+						ms.dog();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -657,6 +721,7 @@ public class Main {
 				System.out.println("\r아지와 할 일을 선택하세요 ");
 				System.out.print("1. 밥먹기 2. 놀기 3. 재우기 4. 목욕하기 5. 사냥하기 >> ");
 				select = sc.nextInt();
+				ms.play3();
 
 				// 밥먹기 선택
 
@@ -668,6 +733,9 @@ public class Main {
 					cnt++;
 					if (meal == 1) {
 						ct.eatChicker5(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -675,6 +743,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 2) {
 						ct.eatChur5(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -682,6 +753,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 3) {
 						ct.eatFeed5(dto);
+						ms.feedEat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -689,6 +763,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 4) {
 						ct.eatSalmon5(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -696,6 +773,9 @@ public class Main {
 						ct.status(dto);
 					} else if (meal == 5) {
 						ct.eatCatnip5(dto);
+						ms.eat();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -756,6 +836,9 @@ public class Main {
 					cnt++;
 					if (sleep == 1) {
 						ct.sleepBed5(dto);
+						ms.catSleep();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -763,6 +846,9 @@ public class Main {
 						ct.status(dto);
 					} else if (sleep == 2) {
 						ct.sleepOndol5(dto);
+						ms.catSleep();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -811,6 +897,9 @@ public class Main {
 						ct.status(dto);
 					} else if (hunt == 4) {
 						ct.huntDog5(dto);
+						ms.dog();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -829,6 +918,9 @@ public class Main {
 				if (cnt >= 5) {
 					++chapter;
 					cnt = 0;
+					ms.endingSong();
+					ct.ending(dto);
+					ms.stop();
 					break;
 				}
 			}
