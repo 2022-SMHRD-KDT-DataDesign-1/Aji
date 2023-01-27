@@ -61,14 +61,15 @@ public class Main {
 
 				if(ct.ajiLogin(dto) == true) {
 					break;
+				} else {
+					System.out.println("로그인 실패!");
+					System.out.println("아이디와 비밀번호를 확인해주세요");
+				}
 				}
 				
-			} else {
-				System.out.println("다시 입력해주세요");
-			}
 		}
 
-		System.out.println("아지의 상태");
+		System.out.println("━━━━━━━━━━━━━━━━━━━━━━━아지의 상태━━━━━━━━━━━━━━━━━━━━━━━━━");
 		ct.status(dto);
 
 		// 출력문 1초 딜레이 메서드 메인 하단에 메서드 있음 확인 요망
@@ -97,22 +98,22 @@ public class Main {
 					if (meal == 1) {
 						ct.eatMilk1(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 2개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 2) {
 						ct.eatBabysoup1(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 2개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 				}
@@ -127,22 +128,22 @@ public class Main {
 						ct.playRobot1(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 2개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 2) {
 						ct.playBell1(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 2개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 3) {
 						ct.playDoll1(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 2개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 					// 재우기 선택
@@ -156,8 +157,8 @@ public class Main {
 					ms.stop();
 					//아지 그림
 					System.out.println("이름 : 아지");
-					System.out.println("나이 : 1살");
-					System.out.println("기분 : 즐거움");
+					System.out.println("나이 : 2개월");
+					ct.feeling(dto);
 					ct.status(dto);
 
 				}
@@ -167,7 +168,7 @@ public class Main {
 				// 실행횟수 초기화
 				if (cnt >= 5) {
 					++chapter;
-					System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+					System.out.println("\r━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
 					cnt = 0;
 
 				}
@@ -190,32 +191,32 @@ public class Main {
 					if (meal == 1) {
 						ct.eatChur2(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 4개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 2) {
 						ct.eatFeed2(dto);
 						ms.feedEat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 4개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 3) {
 						ct.eatCan2(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 4개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -230,22 +231,22 @@ public class Main {
 						ct.playFish2(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 4개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 2) {
 						ct.playTower2(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 4개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 3) {
 						ct.playBox2(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 4개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -259,22 +260,22 @@ public class Main {
 					if (sleep == 1) {
 						ct.sleepBed2(dto);
 						ms.catSleep();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 4개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (sleep == 2) {
 						ct.sleepOndol2(dto);
 						ms.catSleep();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 4개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -286,8 +287,8 @@ public class Main {
 					ct.bath2(dto);
 					//아지 그림
 					System.out.println("이름 : 아지");
-					System.out.println("나이 : 1살");
-					System.out.println("기분 : 즐거움");
+					System.out.println("나이 : 4개월");
+					ct.feeling(dto);
 					ct.status(dto);
 					// 사냥하기 선택
 
@@ -300,15 +301,15 @@ public class Main {
 						ct.huntBug2(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 4개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (hunt == 2) {
 						ct.huntBF2(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 4개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 				}
@@ -317,7 +318,7 @@ public class Main {
 
 				if (cnt >= 5) {
 					++chapter;
-					System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+					System.out.println("\r━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
 					cnt = 0;
 				}
 			}
@@ -342,42 +343,42 @@ public class Main {
 					if (meal == 1) {
 						ct.eatChicken3(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 2) {
 						ct.eatChicken3(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 3) {
 						ct.eatFeed3(dto);
 						ms.feedEat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 4) {
 						ct.eatCatnip3(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -392,29 +393,29 @@ public class Main {
 						ct.playFish3(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 2) {
 						ct.playTower3(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 3) {
 						ct.playBox3(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 4) {
 						ct.playScratchr3(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -428,22 +429,22 @@ public class Main {
 					if (sleep == 1) {
 						ct.sleepBed3(dto);
 						ms.catSleep();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (sleep == 2) {
 						ct.sleepOndol3(dto);
 						ms.catSleep();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -455,8 +456,8 @@ public class Main {
 					ct.Bath3(dto);
 					//아지 그림
 					System.out.println("이름 : 아지");
-					System.out.println("나이 : 1살");
-					System.out.println("기분 : 즐거움");
+					System.out.println("나이 : 6개월");
+					ct.feeling(dto);
 					ct.status(dto);
 
 					// 사냥하기 선택
@@ -470,36 +471,36 @@ public class Main {
 						ct.huntBug3(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (hunt == 2) {
 						ct.huntBF3(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (hunt == 3) {
 						ct.huntMouse3(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (hunt == 4) {
 						ct.huntBird3(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 6개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
 				}
 				if (cnt >= 5) {
 					++chapter;
-					System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+					System.out.println("\r━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
 					cnt = 0;
 
 				}
@@ -525,52 +526,52 @@ public class Main {
 					if (meal == 1) {
 						ct.eatChicken4(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 2) {
 						ct.eatChur4(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 3) {
 						ct.eatFeed4(dto);
 						ms.feedEat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 4) {
 						ct.eatSalmon4(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 5) {
 						ct.eatCatnip4(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -585,36 +586,36 @@ public class Main {
 						ct.playFish4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 2) {
 						ct.playTower4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 3) {
 						ct.playBox4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 4) {
 						ct.playBall4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 5) {
 						ct.playTree4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -628,22 +629,22 @@ public class Main {
 					if (sleep == 1) {
 						ct.sleepBed4(dto);
 						ms.catSleep();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (sleep == 2) {
 						ct.sleepOndol4(dto);
 						ms.catSleep();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -655,8 +656,8 @@ public class Main {
 					ct.Bath4(dto);
 					//아지 그림
 					System.out.println("이름 : 아지");
-					System.out.println("나이 : 1살");
-					System.out.println("기분 : 즐거움");
+					System.out.println("나이 : 10개월");
+					ct.feeling(dto);
 					ct.status(dto);
 					// 사냥하기 선택
 
@@ -669,39 +670,39 @@ public class Main {
 						ct.huntBug4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (hunt == 2) {
 						ct.huntBF4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (hunt == 3) {
 						ct.huntMouse4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (hunt == 4) {
 						ct.huntBird4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (hunt == 5) {
 						ct.huntDog4(dto);
 						ms.dog();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
-						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						System.out.println("나이 : 10개월");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -709,7 +710,7 @@ public class Main {
 			}
 			if (cnt >= 5) {
 				++chapter;
-				System.out.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+				System.out.println("\r━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
 				cnt = 0;
 			}
 
@@ -728,58 +729,58 @@ public class Main {
 				if (select == 1) {
 					System.out.println("[밥먹기]");
 					System.out.println("1. 자연에서 키운 무항생제 닭가슴살 2. 일본 장인이 만든 츄르");
-					System.out.print(" 3. 고급 사료\" + \" 4. 알래스카 연어 5. 캣글라스 캣잎  >>");
+					System.out.print("3. 고급 사료  4. 알래스카 연어 5. 캣글라스 캣잎  >>");
 					meal = sc.nextInt();
 					cnt++;
 					if (meal == 1) {
 						ct.eatChicker5(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 2) {
 						ct.eatChur5(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 3) {
 						ct.eatFeed5(dto);
 						ms.feedEat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 4) {
 						ct.eatSalmon5(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (meal == 5) {
 						ct.eatCatnip5(dto);
 						ms.eat();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -795,35 +796,35 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 2) {
 						ct.playTower5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 3) {
 						ct.playBox5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 4) {
 						ct.playBall5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (play == 5) {
 						ct.playTree5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -831,28 +832,28 @@ public class Main {
 
 				} else if (select == 3) {
 					System.out.println("[재우기]");
-					System.out.print("1. 침대 뺏기 2. 온돌바닥 아랫목 >> ");
+					System.out.print("1. 집사 침대 뺏기 2. 온돌바닥 아랫목 >> ");
 					sleep = sc.nextInt();
 					cnt++;
 					if (sleep == 1) {
 						ct.sleepBed5(dto);
 						ms.catSleep();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (sleep == 2) {
 						ct.sleepOndol5(dto);
 						ms.catSleep();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
@@ -865,7 +866,7 @@ public class Main {
 					//아지 그림
 					System.out.println("이름 : 아지");
 					System.out.println("나이 : 1살");
-					System.out.println("기분 : 즐거움");
+					ct.feeling(dto);
 					ct.status(dto);
 					// 사냥하기 선택
 
@@ -879,38 +880,38 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (hunt == 2) {
 						ct.huntMouse5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (hunt == 3) {
 						ct.huntBird5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (hunt == 4) {
 						ct.huntDog5(dto);
 						ms.dog();
-						sleep(2);
+						sleep(1);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					} else if (hunt == 5) {
 						ct.huntCat5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						System.out.println("기분 : 즐거움");
+						ct.feeling(dto);
 						ct.status(dto);
 					}
 
