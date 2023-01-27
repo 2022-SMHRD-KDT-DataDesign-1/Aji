@@ -43,6 +43,10 @@ public class Main {
 		int bath = 0;
 		int hunt = 0;
 
+		aski as = new aski();
+		
+		as.intro();
+		
 		// 회원가입, 로그인 진행 후 게임 진행
 		while (true) {
 			
