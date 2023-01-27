@@ -534,7 +534,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (meal == 2) {
 						ct.eatChur4(dto);
@@ -544,7 +544,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (meal == 3) {
 						ct.eatFeed4(dto);
@@ -554,7 +554,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (meal == 4) {
 						ct.eatSalmon4(dto);
@@ -564,7 +564,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (meal == 5) {
 						ct.eatCatnip4(dto);
@@ -574,7 +574,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					}
 
@@ -590,35 +590,35 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (play == 2) {
 						ct.playTower4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (play == 3) {
 						ct.playBox4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (play == 4) {
 						ct.playBall4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (play == 5) {
 						ct.playTree4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					}
 
@@ -637,7 +637,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (sleep == 2) {
 						ct.sleepOndol4(dto);
@@ -647,7 +647,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					}
 
@@ -660,7 +660,7 @@ public class Main {
 					//아지 그림
 					System.out.println("이름 : 아지");
 					System.out.println("나이 : 10개월");
-					ct.feeling(dto);
+					ct.feeling45(dto);
 					ct.status(dto);
 					// 사냥하기 선택
 
@@ -674,21 +674,21 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (hunt == 2) {
 						ct.huntBF4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (hunt == 3) {
 						ct.huntMouse4(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (hunt == 4) {
 						ct.huntBird4(dto);
@@ -698,7 +698,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (hunt == 5) {
 						ct.huntDog4(dto);
@@ -708,7 +708,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					}
 
@@ -746,7 +746,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (meal == 2) {
 						ct.eatChur5(dto);
@@ -756,7 +756,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (meal == 3) {
 						ct.eatFeed5(dto);
@@ -766,7 +766,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (meal == 4) {
 						ct.eatSalmon5(dto);
@@ -776,7 +776,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (meal == 5) {
 						ct.eatCatnip5(dto);
@@ -786,7 +786,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					}
 
@@ -802,35 +802,35 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (play == 2) {
 						ct.playTower5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (play == 3) {
 						ct.playBox5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (play == 4) {
 						ct.playBall5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (play == 5) {
 						ct.playTree5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					}
 
@@ -849,7 +849,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (sleep == 2) {
 						ct.sleepOndol5(dto);
@@ -859,7 +859,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					}
 
@@ -872,7 +872,7 @@ public class Main {
 					//아지 그림
 					System.out.println("이름 : 아지");
 					System.out.println("나이 : 1살");
-					ct.feeling(dto);
+					ct.feeling45(dto);
 					ct.status(dto);
 					// 사냥하기 선택
 
@@ -886,21 +886,21 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (hunt == 2) {
 						ct.huntMouse5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (hunt == 3) {
 						ct.huntBird5(dto);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (hunt == 4) {
 						ct.huntDog5(dto);
@@ -910,7 +910,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					} else if (hunt == 5) {
 						ct.huntCat5(dto);
@@ -920,7 +920,7 @@ public class Main {
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
-						ct.feeling(dto);
+						ct.feeling45(dto);
 						ct.status(dto);
 					}
 
