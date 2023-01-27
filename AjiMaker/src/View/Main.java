@@ -20,7 +20,7 @@ public class Main {
 		
 		aski as = new aski();
 		// 입력도구
-		as.intro();
+
 		
 		Controller ct = new Controller();
 		AjiDTO dto = new AjiDTO();
@@ -41,10 +41,9 @@ public class Main {
 		int sleep = 0;
 		int bath = 0;
 		int hunt = 0;
-
-		aski as = new aski();
 		
-		as.intro();
+		as.introAji();
+
 		
 		// 회원가입, 로그인 진행 후 게임 진행
 		while (true) {
@@ -110,6 +109,7 @@ public class Main {
 					if (meal == 1) {
 						ct.eatMilk1(dto);
 						ms.eat();
+						as.eatMilk();
 						sleep(1);
 						ms.stop();
 						//아지 그림
@@ -120,6 +120,7 @@ public class Main {
 					} else if (meal == 2) {
 						ct.eatBabysoup1(dto);
 						ms.eat();
+						as.babyFood();
 						sleep(1);
 						ms.stop();
 						//아지 그림
@@ -138,6 +139,8 @@ public class Main {
 					cnt++;
 					if (play == 1) {
 						ct.playRobot1(dto);
+						as.fishing();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 2개월");
@@ -145,6 +148,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 2) {
 						ct.playBell1(dto);
+						as.bell();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 2개월");
@@ -152,6 +157,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 3) {
 						ct.playDoll1(dto);
+						as.eatFish();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 2개월");
@@ -165,7 +172,8 @@ public class Main {
 					cnt++;
 					ct.sleep1(dto);
 					ms.catSleep();
-					sleep(1);
+					as.ajiSleep();
+					sleep(2);
 					ms.stop();
 					//아지 그림
 					System.out.println("이름 : 아지");
@@ -178,7 +186,7 @@ public class Main {
 				// 5번 선택 실행횟수 카운트 넘으면 챕터 +1
 				// 다음 챕터 출력
 				// 실행횟수 초기화
-				if (cnt >= 5) {
+				if (cnt >= 3) {
 					++chapter;
 					System.out.println("\r━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
 					cnt = 0;
@@ -203,7 +211,8 @@ public class Main {
 					if (meal == 1) {
 						ct.eatChur2(dto);
 						ms.eat();
-						sleep(1);
+						as.chap2Chur();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -213,7 +222,8 @@ public class Main {
 					} else if (meal == 2) {
 						ct.eatFeed2(dto);
 						ms.feedEat();
-						sleep(1);
+						as.ajiFeed();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -223,7 +233,8 @@ public class Main {
 					} else if (meal == 3) {
 						ct.eatCan2(dto);
 						ms.eat();
-						sleep(1);
+						as.can();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -241,6 +252,8 @@ public class Main {
 					cnt++;
 					if (play == 1) {
 						ct.playFish2(dto);
+						as.fishing();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 4개월");
@@ -248,6 +261,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 2) {
 						ct.playTower2(dto);
+						as.catTower();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 4개월");
@@ -255,6 +270,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 3) {
 						ct.playBox2(dto);
+						as.box();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 4개월");
@@ -272,7 +289,8 @@ public class Main {
 					if (sleep == 1) {
 						ct.sleepBed2(dto);
 						ms.catSleep();
-						sleep(1);
+						as.bed();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -282,7 +300,8 @@ public class Main {
 					} else if (sleep == 2) {
 						ct.sleepOndol2(dto);
 						ms.catSleep();
-						sleep(1);
+						as.ondol();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -298,6 +317,7 @@ public class Main {
 					cnt++;
 					ct.bath2(dto);
 					ms.bath();
+					as.wash();
 					sleep(2);
 					ms.stop();
 					//아지 그림
@@ -314,6 +334,8 @@ public class Main {
 					cnt++;
 					if (hunt == 1) {
 						ct.huntBug2(dto);
+						as.fari();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 4개월");
@@ -321,6 +343,8 @@ public class Main {
 						ct.status(dto);
 					} else if (hunt == 2) {
 						ct.huntBF2(dto);
+						as.nabang();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 4개월");
@@ -331,7 +355,7 @@ public class Main {
 
 				// 챕터 2 끝
 
-				if (cnt >= 5) {
+				if (cnt >= 3) {
 					++chapter;
 					System.out.println("\r━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
 					cnt = 0;
@@ -358,7 +382,8 @@ public class Main {
 					if (meal == 1) {
 						ct.eatChicken3(dto);
 						ms.eat();
-						sleep(1);
+						as.chicken();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -368,7 +393,8 @@ public class Main {
 					} else if (meal == 2) {
 						ct.eatChicken3(dto);
 						ms.eat();
-						sleep(1);
+						as.ggosiChur();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -378,7 +404,8 @@ public class Main {
 					} else if (meal == 3) {
 						ct.eatFeed3(dto);
 						ms.feedEat();
-						sleep(1);
+						as.ajiFeed();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -388,7 +415,8 @@ public class Main {
 					} else if (meal == 4) {
 						ct.eatCatnip3(dto);
 						ms.eat();
-						sleep(1);
+						as.catNip();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -406,6 +434,8 @@ public class Main {
 					cnt++;
 					if (play == 1) {
 						ct.playFish3(dto);
+						as.fishing();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 6개월");
@@ -413,6 +443,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 2) {
 						ct.playTower3(dto);
+						as.catTower();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 6개월");
@@ -420,6 +452,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 3) {
 						ct.playBox3(dto);
+						as.box();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 6개월");
@@ -427,6 +461,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 4) {
 						ct.playScratchr3(dto);
+						as.scratcher();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 6개월");
@@ -444,7 +480,8 @@ public class Main {
 					if (sleep == 1) {
 						ct.sleepBed3(dto);
 						ms.catSleep();
-						sleep(1);
+						as.sorfBed();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -454,7 +491,8 @@ public class Main {
 					} else if (sleep == 2) {
 						ct.sleepOndol3(dto);
 						ms.catSleep();
-						sleep(1);
+						as.ondol();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -470,6 +508,7 @@ public class Main {
 					cnt++;
 					ct.Bath3(dto);
 					ms.bath();
+					as.wash();
 					sleep(2);
 					ms.stop();
 					//아지 그림
@@ -487,6 +526,8 @@ public class Main {
 					cnt++;
 					if (hunt == 1) {
 						ct.huntBug3(dto);
+						as.jamjali();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 6개월");
@@ -494,6 +535,8 @@ public class Main {
 						ct.status(dto);
 					} else if (hunt == 2) {
 						ct.huntBF3(dto);
+						as.nabi();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 6개월");
@@ -501,6 +544,8 @@ public class Main {
 						ct.status(dto);
 					} else if (hunt == 3) {
 						ct.huntMouse3(dto);
+						as.babyMouse();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 6개월");
@@ -509,6 +554,7 @@ public class Main {
 					} else if (hunt == 4) {
 						ct.huntBird3(dto);
 						ms.chapbird();
+						as.chamSa();
 						sleep(2);
 						ms.stop();
 						//아지 그림
@@ -519,7 +565,7 @@ public class Main {
 					}
 
 				}
-				if (cnt >= 5) {
+				if (cnt >= 3) {
 					++chapter;
 					System.out.println("\r━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
 					cnt = 0;
@@ -547,7 +593,8 @@ public class Main {
 					if (meal == 1) {
 						ct.eatChicken4(dto);
 						ms.eat();
-						sleep(1);
+						as.chicken();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -557,7 +604,8 @@ public class Main {
 					} else if (meal == 2) {
 						ct.eatChur4(dto);
 						ms.eat();
-						sleep(1);
+						as.chap2Chur();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -567,7 +615,8 @@ public class Main {
 					} else if (meal == 3) {
 						ct.eatFeed4(dto);
 						ms.feedEat();
-						sleep(1);
+						as.ajiFeed();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -577,7 +626,8 @@ public class Main {
 					} else if (meal == 4) {
 						ct.eatSalmon4(dto);
 						ms.eat();
-						sleep(1);
+						as.nosalmon();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -587,7 +637,8 @@ public class Main {
 					} else if (meal == 5) {
 						ct.eatCatnip4(dto);
 						ms.eat();
-						sleep(1);
+						as.atatabi();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -605,6 +656,8 @@ public class Main {
 					cnt++;
 					if (play == 1) {
 						ct.playFish4(dto);
+						as.fishing();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
@@ -612,6 +665,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 2) {
 						ct.playTower4(dto);
+						as.catTower();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
@@ -619,6 +674,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 3) {
 						ct.playBox4(dto);
+						as.box();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
@@ -626,6 +683,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 4) {
 						ct.playBall4(dto);
+						as.bell();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
@@ -633,6 +692,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 5) {
 						ct.playTree4(dto);
+						as.treeGo();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
@@ -650,7 +711,8 @@ public class Main {
 					if (sleep == 1) {
 						ct.sleepBed4(dto);
 						ms.catSleep();
-						sleep(1);
+						as.sorfBed();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -660,7 +722,8 @@ public class Main {
 					} else if (sleep == 2) {
 						ct.sleepOndol4(dto);
 						ms.catSleep();
-						sleep(1);
+						as.ondol();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -676,6 +739,7 @@ public class Main {
 					cnt++;
 					ct.Bath4(dto);
 					ms.bath();
+					as.wash();
 					sleep(2);
 					ms.stop();
 					//아지 그림
@@ -692,6 +756,8 @@ public class Main {
 					cnt++;
 					if (hunt == 1) {
 						ct.huntBug4(dto);
+						as.yooJaeSuk();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
@@ -699,6 +765,8 @@ public class Main {
 						ct.status(dto);
 					} else if (hunt == 2) {
 						ct.huntBF4(dto);
+						as.nabi();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
@@ -706,6 +774,8 @@ public class Main {
 						ct.status(dto);
 					} else if (hunt == 3) {
 						ct.huntMouse4(dto);
+						as.bigMouse();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
@@ -714,6 +784,7 @@ public class Main {
 					} else if (hunt == 4) {
 						ct.huntBird4(dto);
 						ms.gugugu();
+						as.gugu();
 						sleep(3);
 						ms.stop();
 						//아지 그림
@@ -724,7 +795,8 @@ public class Main {
 					} else if (hunt == 5) {
 						ct.huntDog4(dto);
 						ms.dog();
-						sleep(1);
+						as.dog();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -735,7 +807,7 @@ public class Main {
 
 				}
 			}
-			if (cnt >= 5) {
+			if (cnt >= 3) {
 				++chapter;
 				System.out.println("\r━━━━━━━━━━━━━━━━━━━━━━━━━━━챕터" +chapter+"━━━━━━━━━━━━━━━━━━━━━━━━━━━");
 				cnt = 0;
@@ -762,7 +834,8 @@ public class Main {
 					if (meal == 1) {
 						ct.eatChicker5(dto);
 						ms.eat();
-						sleep(1);
+						as.chicken();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -772,7 +845,8 @@ public class Main {
 					} else if (meal == 2) {
 						ct.eatChur5(dto);
 						ms.eat();
-						sleep(1);
+						as.ggosiChur();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -782,7 +856,8 @@ public class Main {
 					} else if (meal == 3) {
 						ct.eatFeed5(dto);
 						ms.feedEat();
-						sleep(1);
+						as.ajiFeed();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -792,7 +867,8 @@ public class Main {
 					} else if (meal == 4) {
 						ct.eatSalmon5(dto);
 						ms.eat();
-						sleep(1);
+						as.nosalmon();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -802,7 +878,8 @@ public class Main {
 					} else if (meal == 5) {
 						ct.eatCatnip5(dto);
 						ms.eat();
-						sleep(1);
+						as.catGlass();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -820,6 +897,8 @@ public class Main {
 					cnt++;
 					if (play == 1) {
 						ct.playFish5(dto);
+						as.fishing();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -827,6 +906,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 2) {
 						ct.playTower5(dto);
+						as.catTower();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -834,6 +915,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 3) {
 						ct.playBox5(dto);
+						as.box();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -841,6 +924,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 4) {
 						ct.playBall5(dto);
+						as.yangmo();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -848,6 +933,8 @@ public class Main {
 						ct.status(dto);
 					} else if (play == 5) {
 						ct.playTree5(dto);
+						as.treeGo();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -865,7 +952,8 @@ public class Main {
 					if (sleep == 1) {
 						ct.sleepBed5(dto);
 						ms.catSleep();
-						sleep(1);
+						as.bed();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -875,7 +963,8 @@ public class Main {
 					} else if (sleep == 2) {
 						ct.sleepOndol5(dto);
 						ms.catSleep();
-						sleep(1);
+						as.ondol();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -891,6 +980,7 @@ public class Main {
 					cnt++;
 					ct.Bath5(dto);
 					ms.bath();
+					as.wash();
 					sleep(2);
 					ms.stop();
 					//아지 그림
@@ -907,6 +997,8 @@ public class Main {
 					cnt++;
 					if (hunt == 1) {
 						ct.huntBug5(dto);
+						as.mantis();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -914,6 +1006,8 @@ public class Main {
 						ct.status(dto);
 					} else if (hunt == 2) {
 						ct.huntMouse5(dto);
+						as.bigMouse();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -921,6 +1015,8 @@ public class Main {
 						ct.status(dto);
 					} else if (hunt == 3) {
 						ct.huntBird5(dto);
+						as.kkachi();
+						sleep(2);
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
@@ -929,7 +1025,8 @@ public class Main {
 					} else if (hunt == 4) {
 						ct.huntDog5(dto);
 						ms.dog();
-						sleep(1);
+						as.dog();
+						sleep(2);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -939,7 +1036,8 @@ public class Main {
 					} else if (hunt == 5) {
 						ct.huntCat5(dto);
 						ms.boss();
-						sleep(3);
+						as.bossCat();
+						sleep(4);
 						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
@@ -949,11 +1047,12 @@ public class Main {
 					}
 
 				}
-				if (cnt >= 5) {
+				if (cnt >= 3) {
 					++chapter;
 					cnt = 0;
 					ms.endingSong();
-					ct.ending(dto);
+					as.ending();
+					//ct.ending(dto);
 					ms.stop();
 					break;
 				}

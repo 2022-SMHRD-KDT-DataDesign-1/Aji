@@ -56,14 +56,7 @@ public class Controller {
 		}
 
 		if (name.equals("독립심")) {
-			sleep();
-			System.out.println("매일 아침 7시 아지는 일어나서 밥을 챙겨먹고,");
-			sleep();
-			System.out.println("혼자서 장난감을 가지고 놀고 ,");
-			sleep();
-			System.out.println("혼자서 열심히 공부하더니 취업에 성공했다.");
-			sleep();
-			System.out.println("그리고 예쁜 공주 고양이와 결혼에 성공해서 행복하게 살았답니다~ ");
+			
 		} else if (name.equals("체력")) {
 			sleep();
 			System.out.println("☆ 아지 세계 최장수 고양이(100세) 로 기네스북에 등극 ");
