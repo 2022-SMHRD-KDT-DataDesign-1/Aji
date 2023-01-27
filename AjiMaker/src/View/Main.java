@@ -490,6 +490,9 @@ public class Main {
 						ct.status(dto);
 					} else if (hunt == 4) {
 						ct.huntBird3(dto);
+						ms.chapbird();
+						sleep(2);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 6개월");
@@ -689,6 +692,9 @@ public class Main {
 						ct.status(dto);
 					} else if (hunt == 4) {
 						ct.huntBird4(dto);
+						ms.gugugu();
+						sleep(3);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 10개월");
@@ -908,6 +914,9 @@ public class Main {
 						ct.status(dto);
 					} else if (hunt == 5) {
 						ct.huntCat5(dto);
+						ms.boss();
+						sleep(3);
+						ms.stop();
 						//아지 그림
 						System.out.println("이름 : 아지");
 						System.out.println("나이 : 1살");
