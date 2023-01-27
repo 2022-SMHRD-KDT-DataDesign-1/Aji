@@ -206,7 +206,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() + 3;
 		int fill = status(dto).get(0).getFill() + 5;
 		int rel = status(dto).get(0).getRel() + 3;
-		int stress = status(dto).get(0).getStress() - 3;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt();
 		int inde = status(dto).get(0).getInde();
 		
@@ -220,7 +220,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() + 5;
 		int fill = status(dto).get(0).getFill() + 3;
 		int rel = status(dto).get(0).getRel() + 3;
-		int stress = status(dto).get(0).getStress() - 5;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt();
 		int inde = status(dto).get(0).getInde();
 		
@@ -292,7 +292,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 2;
 		int fill = status(dto).get(0).getFill() - 1;
 		int rel = status(dto).get(0).getRel() + 3;
-		int stress = status(dto).get(0).getStress() - 4;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt() - 2;
 		int inde = status(dto).get(0).getInde() - 2;
 		
@@ -306,7 +306,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() + 3;
 		int fill = status(dto).get(0).getFill() + 3;
 		int rel = status(dto).get(0).getRel() + 3;
-		int stress = status(dto).get(0).getStress() - 3;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt() - 2;
 		int inde = status(dto).get(0).getInde() - 2;
 		
@@ -320,7 +320,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() + 5;
 		int fill = status(dto).get(0).getFill() + 5;
 		int rel = status(dto).get(0).getRel() + 5;
-		int stress = status(dto).get(0).getStress() - 5;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt() - 3;
 		int inde = status(dto).get(0).getInde() - 3;
 		
@@ -423,7 +423,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 5;
 		int fill = status(dto).get(0).getFill() - 5;
 		int rel = status(dto).get(0).getRel() - 5;
-		int stress = status(dto).get(0).getStress() - 5;
+		int stress = status(dto).get(0).getStress() + 5;
 		int hunt = status(dto).get(0).getHunt() + 7;
 		int inde = status(dto).get(0).getInde() + 7;
 		
@@ -438,7 +438,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 7;
 		int fill = status(dto).get(0).getFill() - 7;
 		int rel = status(dto).get(0).getRel() - 5;
-		int stress = status(dto).get(0).getStress() - 5;
+		int stress = status(dto).get(0).getStress() + 5;
 		int hunt = status(dto).get(0).getHunt() + 8;
 		int inde = status(dto).get(0).getInde() + 8;
 		
@@ -453,7 +453,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() + 8;
 		int fill = status(dto).get(0).getFill() + 8;
 		int rel = status(dto).get(0).getRel() + 5;
-		int stress = status(dto).get(0).getStress() - 5;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt() + 1;
 		int inde = status(dto).get(0).getInde() - 3;
 		
@@ -466,9 +466,9 @@ public class AjiDAO {
 		int row = 0;
 		status(dto);
 		int hp = status(dto).get(0).getHp() - 3;
-		int fill = status(dto).get(0).getFill() - 3;
+		int fill = status(dto).get(0).getFill() + 3;
 		int rel = status(dto).get(0).getRel() + 6;
-		int stress = status(dto).get(0).getStress() - 8;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt() - 3;
 		int inde = status(dto).get(0).getInde() - 4;
 		
@@ -483,7 +483,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() + 6;
 		int fill = status(dto).get(0).getFill() + 6;
 		int rel = status(dto).get(0).getRel() + 6;
-		int stress = status(dto).get(0).getStress() - 6;
+		int stress = status(dto).get(0).getStress();
 		int hunt = status(dto).get(0).getHunt() - 4;
 		int inde = status(dto).get(0).getInde() - 4;
 
@@ -496,9 +496,9 @@ public class AjiDAO {
 		int row = 0;
 		status(dto);
 		int hp = status(dto).get(0).getHp() - 6;
-		int fill = status(dto).get(0).getFill() - 6;
+		int fill = status(dto).get(0).getFill() + 6;
 		int rel = status(dto).get(0).getRel();
-		int stress = status(dto).get(0).getStress() - 10;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt();
 		int inde = status(dto).get(0).getInde();
 		
@@ -511,7 +511,7 @@ public class AjiDAO {
 		int row = 0;
 		status(dto);
 		int hp = status(dto).get(0).getHp() - 6;
-		int fill = status(dto).get(0).getFill() - 10;
+		int fill = status(dto).get(0).getFill() - 6;
 		int rel = status(dto).get(0).getRel() + 6;
 		int stress = status(dto).get(0).getStress() - 10;
 		int hunt = status(dto).get(0).getHunt() + 10;
@@ -620,7 +620,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 10;
 		int fill = status(dto).get(0).getFill() - 10;
 		int rel = status(dto).get(0).getRel() - 10;
-		int stress = status(dto).get(0).getStress() - 10;
+		int stress = status(dto).get(0).getStress() + 10;
 		int hunt = status(dto).get(0).getHunt() + 11;
 		int inde = status(dto).get(0).getInde() + 11;
 		
@@ -635,7 +635,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 11;
 		int fill = status(dto).get(0).getFill() - 11;
 		int rel = status(dto).get(0).getRel() - 10;
-		int stress = status(dto).get(0).getStress() - 10;
+		int stress = status(dto).get(0).getStress() + 10;
 		int hunt = status(dto).get(0).getHunt() + 14;
 		int inde = status(dto).get(0).getInde() + 14;
 
@@ -649,7 +649,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 15;
 		int fill = status(dto).get(0).getFill() - 15;
 		int rel = status(dto).get(0).getRel() - 10;
-		int stress = status(dto).get(0).getStress() - 13;
+		int stress = status(dto).get(0).getStress() + 13;
 		int hunt = status(dto).get(0).getHunt() + 16;
 		int inde = status(dto).get(0).getInde() + 16;
 		
@@ -664,7 +664,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 17;
 		int fill = status(dto).get(0).getFill() - 18;
 		int rel = status(dto).get(0).getRel() - 10;
-		int stress = status(dto).get(0).getStress() - 15;
+		int stress = status(dto).get(0).getStress() + 15;
 		int hunt = status(dto).get(0).getHunt() + 20;
 		int inde = status(dto).get(0).getInde() + 20;
 		
@@ -682,7 +682,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() + 16;
 		int fill = status(dto).get(0).getFill() + 16;
 		int rel = status(dto).get(0).getRel() + 10;
-		int stress = status(dto).get(0).getStress() - 10;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt() + 2;
 		int inde = status(dto).get(0).getInde() + 6;
 		
@@ -697,7 +697,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 6;
 		int fill = status(dto).get(0).getFill() - 6;
 		int rel = status(dto).get(0).getRel() + 12;
-		int stress = status(dto).get(0).getStress() - 16;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt() - 6;
 		int inde = status(dto).get(0).getInde() - 8;
 		
@@ -713,7 +713,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() + 12;
 		int fill = status(dto).get(0).getFill() + 12;
 		int rel = status(dto).get(0).getRel() + 12;
-		int stress = status(dto).get(0).getStress() - 12;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt() - 5;
 		int inde = status(dto).get(0).getInde() - 5;
 		
@@ -728,7 +728,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() + 17;
 		int fill = status(dto).get(0).getFill() + 17;
 		int rel = status(dto).get(0).getRel() + 12;
-		int stress = status(dto).get(0).getStress() - 15;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt();
 		int inde = status(dto).get(0).getInde() - 7;
 		
@@ -743,7 +743,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 10;
 		int fill = status(dto).get(0).getFill() - 10;
 		int rel = status(dto).get(0).getRel();
-		int stress = status(dto).get(0).getStress() - 16;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt();
 		int inde = status(dto).get(0).getInde();
 		
@@ -883,7 +883,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 15;
 		int fill = status(dto).get(0).getFill() - 15;
 		int rel = status(dto).get(0).getRel() - 15;
-		int stress = status(dto).get(0).getStress() - 16;
+		int stress = status(dto).get(0).getStress() + 16;
 		int hunt = status(dto).get(0).getHunt() + 15;
 		int inde = status(dto).get(0).getInde() + 15;
 		
@@ -899,7 +899,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 15;
 		int fill = status(dto).get(0).getFill() - 15;
 		int rel = status(dto).get(0).getRel() - 14;
-		int stress = status(dto).get(0).getStress() - 20;
+		int stress = status(dto).get(0).getStress() + 20;
 		int hunt = status(dto).get(0).getHunt() + 21;
 		int inde = status(dto).get(0).getInde() + 21;
 		
@@ -914,7 +914,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 20;
 		int fill = status(dto).get(0).getFill() - 20;
 		int rel = status(dto).get(0).getRel() - 20;
-		int stress = status(dto).get(0).getStress() - 18;
+		int stress = status(dto).get(0).getStress() + 18;
 		int hunt = status(dto).get(0).getHunt() + 20;
 		int inde = status(dto).get(0).getInde() + 20;
 		
@@ -930,7 +930,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 23;
 		int fill = status(dto).get(0).getFill() - 24;
 		int rel = status(dto).get(0).getRel() - 15;
-		int stress = status(dto).get(0).getStress() - 20;
+		int stress = status(dto).get(0).getStress() + 20;
 		int hunt = status(dto).get(0).getHunt() + 23;
 		int inde = status(dto).get(0).getInde() + 23;
 		
@@ -944,7 +944,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 26;
 		int fill = status(dto).get(0).getFill() - 28;
 		int rel = status(dto).get(0).getRel() - 20;
-		int stress = status(dto).get(0).getStress() - 25;
+		int stress = status(dto).get(0).getStress() + 25;
 		int hunt = status(dto).get(0).getHunt() + 30;
 		int inde = status(dto).get(0).getInde() + 30;
 		
@@ -962,7 +962,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() + 20;
 		int fill = status(dto).get(0).getFill() + 20;
 		int rel = status(dto).get(0).getRel() + 15;
-		int stress = status(dto).get(0).getStress() - 20;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt() + 5;
 		int inde = status(dto).get(0).getInde() + 15;
 		
@@ -978,7 +978,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 12;
 		int fill = status(dto).get(0).getFill() - 12;
 		int rel = status(dto).get(0).getRel() + 24;
-		int stress = status(dto).get(0).getStress() - 36;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt() - 12;
 		int inde = status(dto).get(0).getInde() - 8;
 		
@@ -993,7 +993,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() + 24;
 		int fill = status(dto).get(0).getFill() + 24;
 		int rel = status(dto).get(0).getRel() + 24;
-		int stress = status(dto).get(0).getStress() - 12;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt() - 10;
 		int inde = status(dto).get(0).getInde() - 10;
 		
@@ -1009,7 +1009,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() + 30;
 		int fill = status(dto).get(0).getFill() + 30;
 		int rel = status(dto).get(0).getRel() + 24;
-		int stress = status(dto).get(0).getStress() - 30;
+		int stress = status(dto).get(0).getStress() ;
 		int hunt = status(dto).get(0).getHunt();
 		int inde = status(dto).get(0).getInde() - 14;
 		
@@ -1022,10 +1022,10 @@ public class AjiDAO {
 		int row = 0;
 		status(dto);
 
-		int hp = status(dto).get(0).getHp() - 20;
-		int fill = status(dto).get(0).getFill() - 20;
+		int hp = status(dto).get(0).getHp() - 10;
+		int fill = status(dto).get(0).getFill() +10;
 		int rel = status(dto).get(0).getRel();
-		int stress = status(dto).get(0).getStress() - 32;
+		int stress = status(dto).get(0).getStress();
 		int hunt = status(dto).get(0).getHunt();
 		int inde = status(dto).get(0).getInde();
 		
@@ -1165,7 +1165,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 20;
 		int fill = status(dto).get(0).getFill() - 20;
 		int rel = status(dto).get(0).getRel() - 20;
-		int stress = status(dto).get(0).getStress() - 25;
+		int stress = status(dto).get(0).getStress() + 25;
 		int hunt = status(dto).get(0).getHunt() + 20;
 		int inde = status(dto).get(0).getInde() + 20;
 		
@@ -1181,7 +1181,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 25;
 		int fill = status(dto).get(0).getFill() - 25;
 		int rel = status(dto).get(0).getRel() - 25;
-		int stress = status(dto).get(0).getStress() - 25;
+		int stress = status(dto).get(0).getStress() + 25;
 		int hunt = status(dto).get(0).getHunt() + 25;
 		int inde = status(dto).get(0).getInde() + 25;
 		
@@ -1197,7 +1197,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 30;
 		int fill = status(dto).get(0).getFill() - 30;
 		int rel = status(dto).get(0).getRel() - 20;
-		int stress = status(dto).get(0).getStress() - 30;
+		int stress = status(dto).get(0).getStress() + 30;
 		int hunt = status(dto).get(0).getHunt() + 30;
 		int inde = status(dto).get(0).getInde() + 30;
 		
@@ -1211,7 +1211,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 35;
 		int fill = status(dto).get(0).getFill() - 35;
 		int rel = status(dto).get(0).getRel() - 25;
-		int stress = status(dto).get(0).getStress() - 35;
+		int stress = status(dto).get(0).getStress() + 35;
 		int hunt = status(dto).get(0).getHunt() + 35;
 		int inde = status(dto).get(0).getInde() + 35;
 
@@ -1227,7 +1227,7 @@ public class AjiDAO {
 		int hp = status(dto).get(0).getHp() - 50;
 		int fill = status(dto).get(0).getFill() - 50;
 		int rel = status(dto).get(0).getRel() - 50;
-		int stress = status(dto).get(0).getStress() - 55;
+		int stress = status(dto).get(0).getStress() + 55;
 		int hunt = status(dto).get(0).getHunt() + 50;
 		int inde = status(dto).get(0).getInde() + 50;
 		
