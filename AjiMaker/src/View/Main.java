@@ -1,5 +1,8 @@
 package View;
 
+
+import java.util.Scanner;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -7,13 +10,19 @@ import Controller.Controller;
 import Model.AjiDTO;
 import Music.music;
 
+
 public class Main {
 
 	public static void main(String[] args) {
 
+		Scanner sc = new Scanner(System.in);
+		
+		
+
+
 		// 입력도구
 
-		Scanner sc = new Scanner(System.in);
+		
 		Controller ct = new Controller();
 		AjiDTO dto = new AjiDTO();
 		music ms = new music();
