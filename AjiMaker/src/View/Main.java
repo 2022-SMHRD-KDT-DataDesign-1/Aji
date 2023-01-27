@@ -18,10 +18,9 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		
-
-
+		aski as = new aski();
 		// 입력도구
-
+		as.intro();
 		
 		Controller ct = new Controller();
 		AjiDTO dto = new AjiDTO();
