@@ -294,6 +294,9 @@ public class Main {
 					System.out.println("[목욕하기]");
 					cnt++;
 					ct.bath2(dto);
+					ms.bath();
+					sleep(2);
+					ms.stop();
 					//아지 그림
 					System.out.println("이름 : 아지");
 					System.out.println("나이 : 4개월");
@@ -463,6 +466,9 @@ public class Main {
 					System.out.println("[목욕하기]");
 					cnt++;
 					ct.Bath3(dto);
+					ms.bath();
+					sleep(2);
+					ms.stop();
 					//아지 그림
 					System.out.println("이름 : 아지");
 					System.out.println("나이 : 6개월");
@@ -666,6 +672,9 @@ public class Main {
 					System.out.println("[목욕하기]");
 					cnt++;
 					ct.Bath4(dto);
+					ms.bath();
+					sleep(2);
+					ms.stop();
 					//아지 그림
 					System.out.println("이름 : 아지");
 					System.out.println("나이 : 10개월");
@@ -878,6 +887,9 @@ public class Main {
 					System.out.println("[목욕하기]");
 					cnt++;
 					ct.Bath5(dto);
+					ms.bath();
+					sleep(2);
+					ms.stop();
 					//아지 그림
 					System.out.println("이름 : 아지");
 					System.out.println("나이 : 1살");

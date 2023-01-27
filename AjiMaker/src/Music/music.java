@@ -29,6 +29,7 @@ public class music {
 		mv.add(new musicVO("보스", ".\\bgm\\보스 고양이 소리.mp3"));
 		mv.add(new musicVO("참새", ".\\bgm\\참새.mp3"));
 		mv.add(new musicVO("비둘기", ".\\bgm\\비둘기.mp3"));
+		mv.add(new musicVO("목욕", ".\\bgm\\water bubble2.mp3"));
 		
 	}
 	
@@ -190,6 +191,16 @@ public class music {
 			mp3.stop();
 		}
 		mp3.play(mv.get(15).getMusicPath());
+		
+		return vo;
+	}
+	public musicVO bath() {
+		musicVO vo = mv.get(16);
+
+		if(mp3.isPlaying()) {
+			mp3.stop();
+		}
+		mp3.play(mv.get(16).getMusicPath());
 		
 		return vo;
 	}
